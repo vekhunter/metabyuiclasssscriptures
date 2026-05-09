@@ -3,32 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mission Statement</title>
+  <title>Responsive Design 4d6 Scriptures</title>
+  <!-- Normalize.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">319</button>
-  <div class="page-frame">
-      <script>
-        const toggle = document.getElementById('darkModeToggle');
-        toggle.addEventListener('click', () => {
-          document.body.classList.toggle('dark-mode');
-          toggle.textContent = document.body.classList.contains('dark-mode') ? '31e' : '319';
-        });
-      </script>
-    <h1 class="main-title">MISSION STATEMENT</h1>
-    <div class="subtitle">BRIGHAM YOUNG UNIVERSITYIDAHO</div>
-    <p class="intro">Brigham Young UniversityIdaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.</p>
-    <div class="doesby">The university does this by:</div>
-    <ol class="mission-list">
-      <li>Building testimonies of the restored gospel of Jesus Christ and fostering its principles in a wholesome academic, cultural, and social environment.</li>
-      <li>Providing a high-quality education that prepares students of diverse interests and abilities for lifelong learning and employment.</li>
-      <li>Serving as many students as possible within resource constraints.</li>
-      <li>Delivering education that is affordable for students and the Church.</li>
-    </ol>
-    <div class="logo-container">
-      <img src="byu-idaho-placeholder-logo.svg" alt="BYU-Idaho Placeholder Logo" class="byui-logo-img">
-    </div>
-  </div>
+  <header>
+    <h1>Responsive Design 4d6 Scriptures</h1>
+    <button class="menu-btn" aria-label="Open navigation">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+    <nav>
+      <a href="meta-css.html">Home</a>
+      <a href="#scriptures">Scriptures</a>
+      <a href="#favorites">Favorites</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+  <main>
+    <section class="scripture" id="scriptures">
+      <h2>Helaman 5:12</h2>
+      <p>And now, my sons, remember, remember that it is upon the rock of our Redeemer, who is Christ, the Son of God, that ye must build your foundation; that when the devil shall send forth his mighty winds, yea, his shafts in the whirlwind, yea, when all his hail and his mighty storm shall beat upon you, it shall have no power over you to drag you down to the gulf of misery and endless wo, because of the rock upon which ye are built, which is a sure foundation, a foundation whereon if men build they cannot fall.</p>
+    </section>
+    <section class="scripture" id="favorites">
+      <h2>Mosiah 5:13</h2>
+      <p>For how knoweth a man the master whom he has not served, and who is a stranger unto him, and is far from the thoughts and intents of his heart?</p>
+    </section>
+    <section class="scripture" id="about">
+      <h2>2 Nephi 32:9</h2>
+      <p>But behold, I say unto you that ye must pray always, and not faint; that ye must not perform any thing unto the Lord save in the first place ye shall pray unto the Father in the name of Christ, that he will consecrate thy performance unto thee, that thy performance may be for the welfare of thy soul.</p>
+    </section>
+  </main>
+  <footer>
+    Garrett Gibson
+  </footer>
 </body>
 </html>
