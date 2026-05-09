@@ -1,0 +1,9 @@
+<svg width="180" height="110" viewBox="0 0 180 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect id="logo-bg" width="180" height="110" rx="10" fill="#fff"/>
+  <text x="50%" y="48" text-anchor="middle" fill="#003DA5" font-family="Montserrat, Arial, sans-serif" font-size="38" font-weight="bold" letter-spacing="2">BYU</text>
+  <rect x="40" y="58" width="100" height="3" fill="#003DA5"/>
+  <text x="50%" y="92" text-anchor="middle" fill="#003DA5" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="bold" letter-spacing="2">IDAHO</text>
+  <style>
+    .dark-mode .byui-logo-img #logo-bg { fill: #000 !important; }
+  </style>
+</svg>
