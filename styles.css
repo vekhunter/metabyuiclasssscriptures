@@ -1,3 +1,12 @@
+/* Normalize.css is included via CDN in HTML */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Dark mode toggle button */
 .dark-mode-toggle {
   position: absolute;
@@ -46,101 +55,132 @@ body.dark-mode {
 }
 
 body {
-  background: #fff;
-  font-family: 'Inter', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: #e6f0fa;
   color: #000;
 }
 
-.page-frame {
-  border: 1px solid #000;
-  max-width: 750px;
-  margin: 70px auto 70px auto;
+header, main, footer {
+  max-width: 1000px;
+  margin: 1rem auto;
+  background: #97c6db;
+  border: none;
+  padding: 1rem;
+}
+
+header {
+  padding-bottom: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.menu-btn {
+  display: none;
+}
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: #003366;
+  margin: 6px 0;
+  border-radius: 2px;
+}
+
+nav {
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #003366;
+  text-decoration: underline;
+  background: none;
+  border-radius: 0;
+  margin: 0 0.25rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
+main {
+  background: #97c6db;
+  border: none;
+  padding: 1.5rem 1rem;
+}
+
+.scripture {
   background: #fff;
-  padding: 70px 50px 60px 50px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh;
+  padding: 1.5rem 1.25rem;
+  margin: 1.5rem 0;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
-
-.main-title {
-  font-family: 'Oswald', 'Roboto Condensed', 'Arial Narrow', Arial, sans-serif;
+.scripture h2 {
+  margin-top: 0;
+  color: #111;
+  font-size: 1.5rem;
   font-weight: 700;
-  font-stretch: condensed;
-  font-size: 2.3rem;
-  color: #000;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 2.2em;
-  margin-bottom: 0.5em;
 }
-
-.subtitle {
-  text-align: center;
-  color: #003DA5;
-  font-size: 1.1rem;
-  letter-spacing: 0.15em;
-  margin-bottom: 1.1em;
-  font-weight: 700;
-  font-family: 'Arial Narrow', Arial, sans-serif;
-}
-
-.intro {
-  font-family: 'Inter', Arial, sans-serif;
-  font-size: 1.08rem;
-  color: #000;
-  text-align: center;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-top: 0.7em;
-  margin-bottom: 2.1em;
-  max-width: 650px;
-}
-
-.doesby {
-  font-family: 'Inter', Arial, sans-serif;
-  font-size: 1.08rem;
-  color: #000;
-  text-align: left;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-top: 2.2em;
-  margin-bottom: 1.1em;
-  max-width: 650px;
-  align-self: flex-start;
-}
-
-.mission-list {
-  font-family: 'Inter', Arial, sans-serif;
-  font-size: 1.08rem;
-  color: #000;
-  text-align: left;
-  margin: 0 auto 0 auto;
-  padding-left: 2.1em;
-  max-width: 650px;
-  line-height: 1.6;
-}
-.mission-list li {
-  margin-bottom: 10px;
-  padding-left: 0.1em;
-}
-
-.logo-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-top: 70px;
+.scripture p {
   margin-bottom: 0;
+  color: #222;
+  font-size: 1rem;
 }
-.byui-logo-img {
-  max-width: 140px;
-  min-width: 120px;
-  height: auto;
-  display: block;
+
+footer {
+  text-align: center;
+  color: #003366;
+  font-weight: 500;
+  background: #97c6db;
+  border-top: none;
+  margin-top: 1.5rem;
+}
+
+/* Responsive Navigation */
+@media (max-width: 699px) {
+  nav {
+    text-align: center;
+  }
+  nav a {
+    display: block;
+    margin: 0.5rem auto;
+    width: fit-content;
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  nav {
+    text-align: right;
+  }
+  nav a {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
